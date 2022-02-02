@@ -1,14 +1,16 @@
 name: ml-scikit-tf
 channels:
+  - intel
+  - anaconda
   - http://rssregistry.roche.com:8081/artifactory/api/conda/conda
   - bioconda
-  - anaconda
   - conda-forge
   - defaults
 dependencies:
   - abseil-cpp=20200923.3=h046ec9c_0
   - absl-py=0.10.0=py38_0
   - aiohttp=3.6.3=py38haf1e3a3_0
+  - anyio=3.5.0=py38h50d1736_0
   - appnope=0.1.2=py38h50d1736_2
   - argon2-cffi=21.3.0=pyhd8ed1ab_0
   - argon2-cffi-bindings=21.2.0=py38h96a0964_1
@@ -17,6 +19,7 @@ dependencies:
   - async-timeout=3.0.1=py38_0
   - async_generator=1.10=py_0
   - attrs=21.4.0=pyhd8ed1ab_0
+  - babel=2.9.1=pyh44b312d_0
   - backcall=0.2.0=pyh9f0ad1d_0
   - backports=1.0=py_2
   - backports.functools_lru_cache=1.6.4=pyhd8ed1ab_0
@@ -25,17 +28,19 @@ dependencies:
   - blinker=1.4=py38_0
   - brotlipy=0.7.0=py38haf1e3a3_1000
   - c-ares=1.18.1=h0d85af4_0
-  - ca-certificates=2020.10.14=0
+  - ca-certificates=2021.10.8=h033912b_0
   - cachetools=4.1.1=py_0
-  - certifi=2020.6.20=py38_0
+  - certifi=2021.10.8=py38h50d1736_1
   - cffi=1.14.3=py38hed5b41f_0
   - chardet=3.0.4=py38_1003
   - click=7.1.2=py_0
   - cryptography=3.1.1=py38hddc9c9b_0
+  - cycler=0.10.0=py38_0
   - decorator=5.1.0=pyhd8ed1ab_0
   - defusedxml=0.7.1=pyhd8ed1ab_0
   - entrypoints=0.3=pyhd8ed1ab_1003
   - flit-core=3.6.0=pyhd8ed1ab_0
+  - freetype=2.10.4=ha233b18_0
   - gast=0.3.3=py_0
   - giflib=5.2.1=haf1e3a3_0
   - google-auth=1.22.1=py_0
@@ -54,13 +59,20 @@ dependencies:
   - ipython_genutils=0.2.0=py_1
   - jedi=0.18.1=py38h50d1736_0
   - jinja2=3.0.3=pyhd8ed1ab_0
+  - joblib=1.0.1=py38h3f38642_0
   - jpeg=9d=hbcb3906_0
+  - json5=0.9.5=pyh9f0ad1d_0
   - jsonschema=4.3.3=pyhd8ed1ab_0
   - jupyter_client=7.1.0=pyhd8ed1ab_0
   - jupyter_core=4.9.1=py38h50d1736_1
+  - jupyter_server=1.13.4=pyhd8ed1ab_0
+  - jupyterlab=3.2.8=pyhd8ed1ab_0
   - jupyterlab_pygments=0.1.2=pyh9f0ad1d_0
+  - jupyterlab_server=2.10.3=pyhd8ed1ab_0
   - keras-preprocessing=1.1.2=pyhd8ed1ab_0
+  - kiwisolver=1.2.0=py38h04f5b5a_0
   - krb5=1.17.1=hddcf347_0
+  - lcms2=2.11=h92f6f08_0
   - libcurl=7.76.1=h8ef9fac_1
   - libcxx=12.0.1=habf9029_1
   - libedit=3.1.20191231=h1de35cc_1
@@ -72,8 +84,13 @@ dependencies:
   - libprotobuf=3.15.8=hcf210ce_1
   - libsodium=1.0.18=hbcb3906_1
   - libssh2=1.9.0=ha12b0ac_1
+  - libtiff=4.1.0=hcb84e12_1
+  - llvm-openmp=10.0.0=h28b9765_0
+  - lz4-c=1.9.2=h79c402e_3
   - markdown=3.3.2=py38_0
   - markupsafe=2.0.1=py38h96a0964_1
+  - matplotlib=3.3.1=0
+  - matplotlib-base=3.3.1=py38h181983e_0
   - matplotlib-inline=0.1.3=pyhd8ed1ab_0
   - mistune=0.8.4=py38h96a0964_1005
   - mkl=2019.4=233
@@ -81,6 +98,7 @@ dependencies:
   - mkl_fft=1.2.0=py38hc64f4ea_0
   - mkl_random=1.1.1=py38h959d312_0
   - multidict=4.7.6=py38haf1e3a3_1
+  - nbclassic=0.3.5=pyhd8ed1ab_0
   - nbclient=0.5.9=pyhd8ed1ab_0
   - nbconvert=6.4.0=py38h50d1736_0
   - nbformat=5.1.3=pyhd8ed1ab_0
@@ -90,6 +108,7 @@ dependencies:
   - numpy=1.19.1=py38h3b9f5b6_0
   - numpy-base=1.19.1=py38hcfb5961_0
   - oauthlib=3.1.0=py_0
+  - olefile=0.46=py_0
   - openssl=1.1.1l=h0d85af4_0
   - opt_einsum=3.3.0=pyhd8ed1ab_1
   - packaging=21.3=pyhd8ed1ab_0
@@ -98,6 +117,7 @@ dependencies:
   - parso=0.8.3=pyhd8ed1ab_0
   - pexpect=4.8.0=pyh9f0ad1d_2
   - pickleshare=0.7.5=py_1003
+  - pillow=8.0.0=py38h1a82f1a_0
   - pip=20.2.4=py38_0
   - prometheus_client=0.12.0=pyhd8ed1ab_0
   - prompt-toolkit=3.0.24=pyha770c72_0
@@ -116,17 +136,20 @@ dependencies:
   - python-dateutil=2.8.2=pyhd8ed1ab_0
   - python-flatbuffers=1.12=pyhd8ed1ab_1
   - python_abi=3.8=2_cp38
+  - pytz=2021.3=pyhd8ed1ab_0
   - pyzmq=19.0.2=py38hb1e8313_1
   - re2=2021.04.01=he49afe7_0
   - readline=8.0=h1de35cc_0
   - requests=2.24.0=py_0
   - requests-oauthlib=1.3.0=py_0
   - rsa=4.6=py_0
+  - scikit-learn=0.24.2=py38hb2f4e1b_0
   - scipy=1.5.0=py38hbab996c_0
   - send2trash=1.8.0=pyhd8ed1ab_0
   - setuptools=50.3.0=py38h0dc7051_1
   - six=1.16.0=pyh6c4a22f_0
   - snappy=1.1.8=hb1e8313_0
+  - sniffio=1.2.0=py38h50d1736_2
   - sqlite=3.33.0=hffcf06c_0
   - tensorboard=2.4.1=pyhd8ed1ab_1
   - tensorboard-plugin-wit=1.6.0=py_0
@@ -136,6 +159,7 @@ dependencies:
   - termcolor=1.1.0=py38_1
   - terminado=0.12.1=py38h50d1736_1
   - testpath=0.5.0=pyhd8ed1ab_0
+  - threadpoolctl=2.2.0=pyh0d69192_0
   - tk=8.6.10=hb0a8c7a_0
   - tornado=6.1=py38h96a0964_2
   - traitlets=5.1.1=pyhd8ed1ab_0
@@ -143,6 +167,7 @@ dependencies:
   - urllib3=1.25.11=py_0
   - wcwidth=0.2.5=pyh9f0ad1d_2
   - webencodings=0.5.1=py_1
+  - websocket-client=1.2.3=pyhd8ed1ab_0
   - werkzeug=1.0.1=py_0
   - wheel=0.35.1=py_0
   - wrapt=1.12.1=py38haf1e3a3_1
@@ -151,5 +176,6 @@ dependencies:
   - zeromq=4.3.3=hb1e8313_3
   - zipp=3.6.0=pyhd8ed1ab_0
   - zlib=1.2.11=h1de35cc_3
+  - zstd=1.4.4=h1990bb4_3
 prefix: /Users/sungj4/miniconda3/envs/ml-scikit-tf
 
